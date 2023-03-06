@@ -14,6 +14,7 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
         <div class="grid-division">
@@ -31,9 +32,12 @@
                         </ul>
                     </nav>
                     <div class="heading">
-                        <img class="yellow-block" src="./img/yellow.png" alt="error" />
-                        <h2>We provide<span class="you"> YOU</span></h2>
+                        <div class="yellow-block-resp">
+                            <h2 class="heading-h2">We provide<span class="you"> YOU</span></h2>
+                            <img class="yellow-block" src="./img/yellow.png" alt="error" />
+                        </div>
                         <h3>with the best design you'll ever need</h3>
+                        
                         <a class="btn-learn-more" href="#">Learn more <img src="./img/arrow.svg" alt="arrow-error"></i></a>
                     </div>
                     <div class="header-img"><img src="./img/we-provide-you.png" alt="error" /></div>
@@ -62,9 +66,6 @@
 
                             <!-- ??? -->
                             <div class="rectangle">
-                                <img src="./img/rectangle1.png" alt="rectangle">
-                                <img src="./img/rectangle2.png" alt="rectangle">
-                                <img src="./img/rectangle3.png" alt="rectangle">
                             </div >
                             <h3>People thoughts about our work</h3>
                             <ul class="reviews">
@@ -115,18 +116,27 @@
                             <h3>Who we are and what we do</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, accusamus impedit sunt vel nesciunt fugiat nam, eligendi magnam hic voluptate, adipisci provident magni ipsum perspiciatis? Molestiae quam modi quia beatae quasi fugit quisquamLorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, accusamus impedit sunt vel nesciunt fugiat nam, eligendi magnam hic voluptate, adipisci provident magni ipsum perspiciatis? Molestiae quam modi quia beatae quasi fugit quisquamLorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, accusamus impedit sunt vel nesciunt fugiat nam, eligendi magnam hic voluptate, adipisci provident magni ipsum perspiciatis? Molestiae quam modi quia beatae quasi fugit quisquam</p>
                             <h3 class="stat">Some Statistics</h2>
-                            <ul>
-                                <li>                            
-                                    <img src="./img/quality.png" alt="error">
+                            <ul class="about-us-stats">
+                                <li class="quality">                            
+                                    <p>Quality: <span class="stat-percent">90%</span></p>
+                                    <div class="quality-line">
+                                        <div class="grey-line"></div>
+                                    </div>
                                 </li>
-                                <li>
-                                    <img src="./img/speed.png" alt="error">
+                                <li class="speed">
+                                    <p>Speed: <span class="stat-percent">87%</span></p>
+                                    <div class="speed-line">
+                                        <div class="grey-line"></div>
+                                    </div>
                                 </li>
-                                <li>        
-                                    <img src="./img/client-exp.png" alt="error">
+                                <li class="client-exp">        
+                                    <p>Client Experience: <span class="stat-percent">93%</span></p>
+                                    <div class="client-exp-line">
+                                        <div class="grey-line"></div>
+                                    </div>
                                 </li>
                             </ul>
-                            <a class="btn-more-info" href="#">More Info<img class="green-arrow" src="./img/green-arrow.png" alt="arrow-error"></i></a> 
+                            <a class="btn-more-info" href="#">More Info<i class="fa-solid fa-arrow-right-long"></i></a> 
                         </div>
                         <div class="services">
                             <img width="870" src="./img/about-us.png" alt="error">
@@ -161,7 +171,7 @@
                             <p class="section-contacts-bg">Contacts</p>
                         </div>
                         <div class="section-contacts-info">
-                            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, accusamus impedit sunt vel nesciunt fugiat nam, eligendi magnam hic voluptate, adipisci provident magni ipsum perspiciatis? Molestiae quam modi quia beatae quasi fugit quisquamLorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, accusamus impedit sunt vel nesciunt fugiat nam, eligendi magnam hic voluptate, adipisci provident magni ipsum perspiciatis? Molestiae quam modi quia beatae quasi fugit quisquamLorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, accusamus impedit sunt vel nesciunt fugiat nam, eligendi magnam hic voluptate, adipisci provident magni ipsum perspiciatis? Molestiae quam modi quia beatae quasi fugit quisquam</p>
+                            <p class="section-contacts-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, accusamus impedit sunt vel nesciunt fugiat nam, eligendi magnam hic voluptate, adipisci provident magni ipsum perspiciatis? Molestiae quam modi quia beatae quasi fugit quisquamLorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, accusamus impedit sunt vel nesciunt fugiat nam, eligendi magnam hic voluptate, adipisci provident magni ipsum perspiciatis? Molestiae quam modi quia beatae quasi fugit quisquamLorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, accusamus impedit sunt vel nesciunt fugiat nam, eligendi magnam hic voluptate, adipisci provident magni ipsum perspiciatis? Molestiae quam modi quia beatae quasi fugit quisquam</p>
                             <ul >
                                 <li>
                                     <img src="./img/vector.png" alt="error">
@@ -193,16 +203,18 @@
                                     <img class="black-star" src="./img/black-star.png" alt="error">
                                 </div>
                                 <p class="price">$5000</p>
-                                <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, accusamus impedit sunt vel nesciunt fugiat nam, eligendi magnam hic voluptate, adipisci provident magni ipsum perspiciatis? Molestiae quam modi quia beatae quasi fugit quisquamLorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, accusamus impedit sunt vel nesciunt fugiat nam, eligendi magnam hic voluptate, adipisci provident magni ipsum perspiciatis</p>
+                                <p class="other-team-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, accusamus impedit sunt vel nesciunt fugiat nam, eligendi magnam hic voluptate, adipisci provident magni ipsum perspiciatis? Molestiae quam modi quia beatae quasi fugit quisquamLorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, accusamus impedit sunt vel nesciunt fugiat nam, eligendi magnam hic voluptate, adipisci provident magni ipsum perspiciatis</p>
+                                <a class="btn-see-more" href="#">See more <img src="./img/pink-arrow.png" alt="arrow-error"></i></a>
                             </div>
-                            <a class="btn-see-more" href="#">See more <img src="./img/pink-arrow.png" alt="arrow-error"></i></a>
-                            <img class="team-man" src="./img/team-man.png" alt="error" width="100%">
-                            <img class="jane-doe" src="./img/jane-doe.png" alt="error">
-                            <img class="team-woman" src="./img/team-woman.png" alt="error">
+                            <ul class="other-team-cards">
+                                <li class="team-man"><img width="100%" src="./img/team-man.png" alt="error" ></li>
+                                <li class="jane-doe"><img  src="./img/jane-doe.png" alt="error"></li>
+                                <li class="team-woman"><img  src="./img/team-woman.png" alt="error"></li>
+                            </ul>
                         </div>
                     </section>
-                    <section>
-                        <div class="our-work">
+                    <section class="our-work">
+                        <div >
                             <h2>Our work</h2>
                             <h3>Some of the best pactices, that we provide</h3>
                         </div>
@@ -216,7 +228,7 @@
                             <img class="purple-sky" src="./img/work7.png" alt="error">
                             <img class="server" src="./img/work8.png" alt="error">
                         </div>
-                        <div>
+                        <div >
                             <a class="btn-more-works" href="#">See More Works</a>
                         </div>
                     </section>

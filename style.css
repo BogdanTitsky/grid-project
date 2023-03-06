@@ -1,4 +1,4 @@
-/* General */
+/* ?-------------------------General-------------------------*/
 
 body {
     font-family: 'Roboto', Arial, sans-serif;
@@ -12,7 +12,6 @@ a {
 }
 
 main {
-    margin-left: 80px;
     padding-right: 10px;
 }
 li {
@@ -36,7 +35,7 @@ h3 {
     font-weight: 100;
 }
 
-/* Sidebar */
+/*?-------------------------Sidebar-------------------------*/
 
 .sidepanel {
     width: 0;
@@ -91,7 +90,7 @@ h3 {
     background-color: #444;
 }
 
-/* Division */
+/*?------------------------- Division -------------------------*/
 
 .grid-division {
     display: grid;
@@ -107,7 +106,7 @@ aside {
     align-items: start;
 }
 
-/* Header */
+/*?------------------------- Header -------------------------*/
 
 .logo {
     color: #f8be02;
@@ -121,6 +120,7 @@ header {
         'nav header-img'
         'heading header-img';
     padding-right: 10px;
+    margin-top: 10px;
 }
 
 .you {
@@ -134,6 +134,7 @@ header {
     display: flex;
 
     font-size: 20px;
+    margin-top: 35px;
     margin-left: 50px;
     padding: 0;
     gap: 30px;
@@ -151,9 +152,10 @@ header {
     text-align: center;
 }
 
-.heading h2 {
+.heading-h2 {
     font-size: 72px;
     font-weight: bold;
+    margin-bottom: 84px;
 }
 
 .heading h3 {
@@ -164,16 +166,23 @@ header {
     border: #f8be02 solid 1px;
     grid-area: top-btn;
     font-size: 24px;
-    padding-left: 10px;
-    padding-right: 20px;
+    padding: 5px 0 5px 23px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+}
 
-    /* ??? */
-    /* width: 300px;
-    height: 100px; */
+.btn-learn-more:hover {
+    background-color: black;
+    color: #f8be02;
+}
+
+.btn-learn-more img {
+    margin: 0 53px 0 8px;
+    padding-bottom: 3px;
 }
 
 .heading {
-    position: relative;
     grid-area: heading;
     margin-left: 80px;
     align-self: center;
@@ -185,15 +194,19 @@ header {
     justify-self: end;
 }
 
+.yellow-block-resp {
+    position: relative;
+}
+
 .yellow-block {
     position: absolute;
     z-index: -100;
-    top: 50%;
-    left: 50%;
+    top: 125px;
+    left: 63%;
     transform: translate(-50%, -50%);
 }
 
-/* MAIN */
+/*?------------------------- MAIN -------------------------*/
 
 .hero {
     display: grid;
@@ -202,7 +215,7 @@ header {
     column-gap: 15px;
 }
 
-/* inputs */
+/*?------------------------- inputs -------------------------*/
 
 .sign-up {
     color: white;
@@ -239,16 +252,23 @@ header {
     color: white;
     font-size: 24px;
     width: 30%;
+    margin-top: 45px;
 }
 
-/* testimonials */
+.submit-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/*?------------------------- testimonials -------------------------*/
 
 .testimonials {
 }
 
 .testimonials h2 {
     font-size: 48px;
-    margin-bottom: 0;
+    margin-bottom: 15px;
+    margin-left: 50px;
 
     position: relative;
 }
@@ -256,8 +276,9 @@ header {
 .rectangle {
 }
 
-.testimonials h3 {
+.testimonials > h3 {
     font-weight: 100;
+    margin-left: 50px;
 }
 
 .reviews {
@@ -265,24 +286,85 @@ header {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 8%;
-    padding: 5% 8% 0 5%;
+    margin-left: 100px;
+    margin-right: 145px;
 }
 
-/* About Us */
+.reviews > li {
+    margin-top: 50px;
+}
+
+.reviews > li h3 {
+    margin: 7px 0 8px 0;
+}
+
+.reviews > li p {
+    margin-bottom: 25px;
+}
+
+/*?------------------------- About Us -------------------------*/
 
 .about-us {
     display: flex;
     flex-direction: column;
+    margin-left: 80px;
 }
 
 .about-us h2 {
     margin: 0;
 }
 
+.about-us p {
+    margin-right: 30px;
+}
+
 .about-us .stat {
     font-size: 32px;
     font-weight: bold;
 }
+
+.about-us-stats p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 15px 0 7px 0;
+}
+
+.stat-percent {
+    color: #b8e32b;
+}
+
+.quality-line {
+    background-color: #b8e32b;
+    width: 300px;
+    height: 8px;
+    position: relative;
+}
+
+.speed-line {
+    background-color: #b8e32b;
+    width: 290px;
+    height: 8px;
+    position: relative;
+}
+
+.client-exp-line {
+    background-color: #b8e32b;
+    width: 310px;
+    height: 8px;
+    position: relative;
+}
+
+.grey-line {
+    position: absolute;
+    width: 330px;
+    height: 8px;
+    background-color: #c4c4c4;
+    z-index: -100;
+}
+
+/*?------------------------- Services -------------------------*/
 
 .services {
 }
@@ -298,10 +380,23 @@ header {
     width: 230px;
     padding-left: 25px;
     padding-top: 8px;
+    margin-bottom: 40px;
 }
 
-.green-arrow {
+.btn-more-info:hover {
+    background-color: rgba(184, 227, 43, 1);
+    color: white;
+}
+
+.fa-arrow-right-long {
     margin-left: 30px;
+    margin-top: 6px;
+    width: 32px;
+    color: #b8e32b;
+}
+
+.fa-arrow-right-long:hover {
+    color: white;
 }
 
 .services-list {
@@ -310,10 +405,11 @@ header {
     column-gap: 20px;
 }
 
-/* Contacts */
+/*?------------------------- Contacts -------------------------*/
 
 .section-contacts {
     position: relative;
+    margin-left: 80px;
 }
 
 .section-contacts h2 {
@@ -334,6 +430,15 @@ header {
 
 .section-contacts-info {
     align-self: center;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-contacts-text {
+    width: 800px;
+
+    align-self: flex-end;
 }
 
 .section-contacts-info p {
@@ -381,58 +486,46 @@ header {
     left: 50px;
 }
 
-/* TEAM */
+/*?------------------------- TEAM -------------------------*/
 
 .team {
     align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+}
+
+.team h2 {
+    margin-bottom: 15px;
+}
+
+.team h3 {
+    margin-top: 15px;
+    margin-bottom: 50px;
 }
 
 .other-team {
-    display: grid;
-    grid-template-columns: 6fr 2fr 2fr;
-    grid-template-rows: 3fr 5fr 4fr;
-
-    grid-template-areas:
-        '.... man  man'
-        'john man  man'
-        'btn-see jane woman';
-    row-gap: 10px;
-    column-gap: 10px;
-}
-
-.john-doe {
-    grid-area: john;
+    display: flex;
 }
 
 .john-doe h2 {
     font-size: 36px;
-
     margin: 0;
+    margin-top: 200px;
 }
 
 .john-doe h3 {
     font-size: 20px;
     font-weight: 100;
-
     margin-top: 0;
     margin-bottom: 27px;
 }
 
-.team-man {
-    grid-area: man;
-}
-
-.jane-doe {
-    grid-area: jane;
-}
-
-.team-woman {
-    grid-area: woman;
-}
-
-.rate {
+.john-doe {
     display: flex;
-    gap: 10px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
 }
 
 .price {
@@ -440,36 +533,64 @@ header {
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
-
     color: #e32b68;
-    margin-top: 15px;
-    margin-bottom: 20px;
+    margin: 0%;
+}
+
+.other-team-text {
 }
 
 .btn-see-more {
     border: 1px solid #e32b68;
-    grid-area: top-btn;
     font-size: 24px;
-    padding-top: 10px;
-    padding-left: 28px;
-    padding-right: 20px;
-    grid-area: btn-see;
-    justify-self: start;
-    align-self: center;
-    width: 210px;
-    height: 40px;
+    padding: 5px 28px 5px 22px;
+    margin-top: 50px;
+}
+
+.btn-see-more:hover {
+    background-color: #e32b68;
+    color: #111;
 }
 
 .btn-see-more img {
     margin-left: 28px;
     padding-bottom: 3px;
+    margin-right: 52px;
 }
 
 .black-star {
     width: 25px;
 }
 
-/* OUR WORK */
+.other-team-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        'man man'
+        'man man'
+        'jane woman';
+    justify-content: stretch;
+    row-gap: 10px;
+    column-gap: 15px;
+}
+
+.team-man {
+    grid-area: man;
+}
+.jane-doe {
+    grid-area: jane;
+}
+.team-woman {
+    grid-area: woman;
+}
+
+/*?------------------------- OUR WORK -------------------------*/
+
+.our-work {
+    margin-left: 80px;
+    margin-right: 10px;
+}
 
 .our-work h2 {
     font-style: normal;
@@ -497,9 +618,16 @@ header {
         'office    mirror     blue-sky'
         'office    modern     modern'
         'office    purple-sky server';
+    column-gap: 13px;
+    row-gap: 13px;
 }
 
-.brown-apartment {
+.works > img {
+    width: 100%;
+    height: 100%;
+}
+
+.works .brown-apartment {
     grid-area: apartment;
 }
 .desk {
@@ -524,14 +652,20 @@ header {
     grid-area: server;
 }
 
+.btn-more-works-margin {
+    margin-right: 10px;
+}
+
 .btn-more-works {
     background: #782be3;
+    border: #782be3 solid 5px;
     width: 100%;
     color: white;
     display: inline-block;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 100px;
+    margin-right: 100px;
     height: 75px;
     padding-top: 37.5px;
 
@@ -540,7 +674,13 @@ header {
     line-height: 29px;
 }
 
-/* footer */
+.btn-more-works:hover {
+    border: #782be3 solid 5px;
+    background-color: white;
+    color: #782be3;
+}
+
+/*?------------------------- footer -------------------------*/
 
 footer {
     display: grid;
