@@ -263,17 +263,43 @@ header {
 /*?------------------------- testimonials -------------------------*/
 
 .testimonials {
+    position: relative;
 }
 
 .testimonials h2 {
     font-size: 48px;
     margin-bottom: 15px;
     margin-left: 50px;
-
-    position: relative;
 }
 
-.rectangle {
+.testimonials-rectangle {
+    position: absolute;
+    top: 45px;
+    left: 50px;
+}
+
+.yellow-rectangle {
+    position: inherit;
+    height: 3px;
+    width: 25px;
+    background-color: rgba(248, 190, 2, 1);
+    border-radius: 3px;
+}
+.light-gray-rectangle {
+    position: inherit;
+    height: 3px;
+    width: 35px;
+    background-color: rgba(229, 229, 229, 1);
+    z-index: -1;
+    border-radius: 3px;
+}
+.grey-rectangle {
+    position: inherit;
+    height: 3px;
+    width: 42px;
+    background-color: rgba(208, 208, 208, 1);
+    z-index: -2;
+    border-radius: 3px;
 }
 
 .testimonials > h3 {
@@ -308,6 +334,21 @@ header {
     display: flex;
     flex-direction: column;
     margin-left: 80px;
+    position: relative;
+}
+
+.about-us-rectangle {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.green-rectangle {
+    position: inherit;
+    height: 3px;
+    width: 25px;
+    background-color: #b8e32b;
+    border-radius: 3px;
 }
 
 .about-us h2 {
@@ -412,6 +453,20 @@ header {
     margin-left: 80px;
 }
 
+.contacts-rectangle {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.blue-rectangle {
+    position: inherit;
+    height: 3px;
+    width: 25px;
+    background-color: #2bd7e3;
+    border-radius: 3px;
+}
+
 .section-contacts h2 {
     font-weight: 700;
     font-size: 48px;
@@ -493,6 +548,21 @@ header {
     display: flex;
     flex-direction: column;
     margin-left: 80px;
+    position: relative;
+}
+
+.team-rectangle {
+    position: absolute;
+    top: 43px;
+    left: 0px;
+}
+
+.red-rectangle {
+    position: inherit;
+    height: 3px;
+    width: 25px;
+    background-color: #e32b68;
+    border-radius: 3px;
 }
 
 .team h2 {
@@ -577,12 +647,140 @@ header {
 
 .team-man {
     grid-area: man;
+    position: relative;
 }
+
+/* *-----------------team-man-hover------------------* */
+
+.team-man-hover {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 373px;
+    height: 497px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9) 80%);
+    padding-left: 80px;
+    padding-top: 300px;
+    padding-bottom: 15px;
+    border-radius: 8px;
+    display: none;
+}
+
+.team-man:hover .team-man-hover {
+    display: block;
+    z-index: 10;
+}
+
+.team-man-hover h2 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 29px;
+
+    color: #ffffff;
+    margin: 0;
+}
+
+.team-man-hover > .role {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 18px;
+
+    color: #d2d2d2;
+    margin: 20px 0;
+}
+
+.team-man-hover > .team-rate {
+    margin: 10px 0;
+}
+
+.team-man-hover > .team-rate img {
+    width: 26px;
+}
+
+.team-man-price {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 19px;
+
+    color: #e32b68;
+    margin-top: 20px;
+}
+
+/* *-----------------------------------* */
+
 .jane-doe {
     grid-area: jane;
+    position: relative;
 }
+
+/* *-----------------jane-doe/team-woman-hover------------------* */
+
+.jane-doe-hover,
+.team-woman-hover {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 179px;
+    height: 239px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7) 80%);
+    padding-left: 10px;
+    padding-top: 120px;
+    padding-bottom: 15px;
+    border-radius: 8px;
+    display: none;
+}
+
+.jane-doe:hover .jane-doe-hover,
+.team-woman:hover .team-woman-hover {
+    display: block;
+    z-index: 10;
+}
+
+.jane-doe-hover h2,
+.team-woman-hover h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #ffffff;
+    margin: 0;
+}
+
+.role {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #d2d2d2;
+    margin: 0;
+}
+
+.team-rate {
+    margin: 10px 0;
+}
+
+.team-rate img {
+    width: 16px;
+}
+
+.jane-doe-price {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #e32b68;
+    margin: 0;
+}
+
+/* *-----------------------------------* */
+
 .team-woman {
     grid-area: woman;
+    position: relative;
 }
 
 /*?------------------------- OUR WORK -------------------------*/
@@ -590,6 +788,21 @@ header {
 .our-work {
     margin-left: 80px;
     margin-right: 10px;
+    position: relative;
+}
+
+.our-work-rectangle {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.violet-rectangle {
+    position: inherit;
+    height: 3px;
+    width: 25px;
+    background-color: #782be3;
+    border-radius: 3px;
 }
 
 .our-work h2 {
@@ -695,6 +908,7 @@ footer {
     background-color: rgba(50, 47, 47, 1);
     padding-left: 75px;
     padding-bottom: 35px;
+    column-gap: 15px;
 }
 
 footer a {
