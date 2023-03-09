@@ -1,5 +1,9 @@
 /* ?-------------------------General-------------------------*/
 
+.grid-div {
+    display: grid;
+}
+
 body {
     font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
@@ -40,6 +44,10 @@ h3 {
 }
 
 #header {
+    transition: margin-right 0.5s;
+}
+
+#footer {
     transition: margin-right 0.5s;
 }
 
@@ -105,13 +113,6 @@ h3 {
 
 .openbtn:hover {
     background-color: #444;
-}
-
-/*?------------------------- Division -------------------------*/
-
-.grid-division {
-    display: grid;
-    grid-template-columns: 1fr;
 }
 
 /*?------------------------- Header -------------------------*/
@@ -198,7 +199,7 @@ header {
 
 .header-img {
     grid-area: header-img;
-    width: 375;
+    width: 375px;
     justify-self: end;
 }
 
@@ -218,7 +219,7 @@ header {
 
 .hero {
     display: grid;
-    grid-template-columns: 7fr 9fr;
+    grid-template-columns: 5fr 6fr;
     row-gap: 80px;
     column-gap: 15px;
 }
@@ -418,6 +419,10 @@ header {
 .services {
 }
 
+.services-img {
+    width: 100%;
+}
+
 .btn-more-info {
     border: rgba(184, 227, 43, 1) solid 1px;
     grid-area: top-btn;
@@ -450,8 +455,12 @@ header {
 
 .services-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 220px);
     column-gap: 20px;
+}
+
+.services-list li {
+    width: 220px;
 }
 
 /*?------------------------- Contacts -------------------------*/
